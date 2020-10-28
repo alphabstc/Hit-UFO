@@ -33,7 +33,7 @@ public class Controllor : MonoBehaviour,ISceneControllor,IUserAction
 		fam = gameObject.AddComponent<FlyActionManager>() as FlyActionManager;
 		ug = gameObject.AddComponent<UserGUI>() as UserGUI;
 		rc = gameObject.AddComponent<RoundControllor> () as RoundControllor;
-		explosion = Instantiate (Resources.Load<GameObject> ("Prefabs/ParticleSystem1"), new Vector3(0, -100, 0), Quaternion.identity);
+		explosion = Instantiate (Resources.Load<GameObject> ("Prefabs/ParticleSystemGreen"), new Vector3(0, -100, 0), Quaternion.identity);
 		t = speed;
 	}
 	void Update ()
